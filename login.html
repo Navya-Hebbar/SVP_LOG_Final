@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Laila:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
+
+        body
+        {
+            background-color: black;
+        }
+
+        .logo img
+        {
+            width: 15vw;
+        }
+
+        .logo
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .heading
+        {
+            color: white;
+            font-size: 3vw;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            margin-left:1vw;
+            font-family: 'Laila', sans-serif;
+            
+        }
+
+        .subheading
+        {
+            color: white;
+            font-size: 2vw;
+            font-weight: bolder;
+            display: flex;
+            margin-left: 40vw;
+            font-family: 'Laila', sans-serif;
+        }
+
+        .subheading h1
+        {
+            color:palegoldenrod;
+            font-size: 3vw;
+            margin-left: 22px;
+            margin-top:0.015em;
+            font-family: 'Laila', sans-serif;
+            
+        }
+
+        .forms
+        {
+            color: white;
+            font-family: 'Laila', sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin-left: 35vw;
+            margin-top: 5vh;
+            font-size: 4vh;
+        }
+
+        .forms .name input
+        {
+            margin-left: 80px;
+            margin-bottom:30px;
+        }
+
+        .forms .address input
+        {
+            margin-left: 32px;
+            margin-bottom:30px;
+        }
+
+        .forms .phno input
+        {
+            margin-left: 14px;
+            margin-bottom:30px;
+        }
+        .forms input
+        {
+            border-radius: 50px;
+            height: 70px;
+            width: 500px;
+
+        }
+        
+
+        .forms input[type="tel"]::placeholder {
+             
+            /* Firefox, Chrome, Opera */
+            text-align: center;
+        }
+
+        .forms input[type="text"]::placeholder {
+             
+            /* Firefox, Chrome, Opera */
+            text-align: center;
+        }
+
+        .login button
+        {
+            border-radius: 50vw;
+            height: 8vh;
+            width: 12vw;
+            margin-left: 58vw;
+            border:4px solid  white;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-family: 'Laila', sans-serif;
+            font-size: 1.78vw;
+            
+
+        }
+
+        .login a
+        {
+            text-decoration: none;
+            color: white;
+        }
+
+        .login a:hover
+        {
+            text-decoration:underline;
+        }
+
+
+        .login input[type="text"]::placeholder {
+             
+            /* Firefox, Chrome, Opera */
+            text-align: center;
+        }
+
+        .register
+        {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            margin-left: 450px;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        .register h3
+        {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .register a
+        {
+            text-decoration: none;
+            color: pink;
+        }
+        
+            @media (max-width: 768px) 
+            {
+                .logo img {
+                    width: 30vw;
+                }
+        
+                .heading {
+                    font-size: 5vw;
+                }
+        
+                .subheading {
+                    font-size: 4vw;
+                    margin-left: 10vw;
+                }
+        
+                .forms {
+                    margin: 5vh auto;
+                    width: 80%;
+                    font-size: 3vh;
+                }
+        
+                .forms input {
+                    width: 100%;
+                }
+        
+                .login button {
+                    margin-left:0 ;
+                    margin-right: 0;
+                    width: 50%;
+                    font-size: 3vw;
+                }
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="SVP_Logistics" srcset="">
+        <div class="heading">
+            LOGIN PAGE
+        </div>
+    </div>
+    <div class="subheading">
+        WELCOME TO <h1>SVP LOGISTICS</h1>
+    </div>
+
+    <div class="forms">
+        <div class="name">
+            NAME: <input type="text" placeholder="Enter Your Name">
+        </div>
+
+        <div class="phno">
+            PHONE NO: <input type="tel" placeholder="Enter Your Phone">
+        </div>
+
+        <div class="address">
+            ADDRESS: <input type="text" placeholder="Enter Your Address">
+        </div>
+    </div>
+
+    <div class="login">
+       <button type="submit"><a href="home.html">LOGIN</a></button>
+    </div>
+
+    <div class="register">
+        Dont have an account? &nbsp;<a href="register.html"><h3>REGISTER</h3></a>
+    </div>
+
+    
+</body>
+</html>

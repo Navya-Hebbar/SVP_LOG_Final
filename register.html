@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Laila:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
+
+        body
+        {
+            background-color: black;
+        }
+
+        .logo img
+        {
+            width: 15vw;
+        }
+
+        .logo
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        label{
+            color: #fff;
+            font-size: 30px;
+            font-family: 'Laila', sans-serif;
+            margin-left: 100px;
+        }
+        
+        .logo .heading{
+            color: white;
+            font-size: 3vw;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            margin-left:1vw;
+            font-family: 'Laila', sans-serif;
+        }
+        .Name{
+            color: white;
+            font-family: 'Laila', sans-serif;
+            display: flex;
+            margin-left: 25vw;
+            margin-top: -15px;
+            font-size: 4vh;
+        }
+        .details1{
+            display: flex;
+        }
+        input{
+            width: 400px;
+            height: 60px;
+            border-radius: 60px;
+            margin-left: 50px;
+        }
+        .Name .lname{
+            margin-left: 30px;
+            margin-top: -4px;
+        }
+        .details1 .address{
+            margin-top: 30px;
+            margin-left: 2vw;
+        }
+
+        .details1 .email
+        {
+            margin-top: 30px;
+            margin-left: 25vw;
+        }
+        .phone{
+            margin-left: 600px;
+            margin-top: 30px;
+        }
+        .phone label{
+            margin-left:150px ;
+        }
+        .submit button {
+            width: 200px;
+            height: 70px;
+            border-radius: 60px ;
+            font-size: 35px;
+            font-family: 'Laila', sans-serif;
+            margin-left: 770px;
+            background-color: aqua;
+
+        }
+        
+        input[type="text"]::placeholder
+        {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        input[type="tel"]::placeholder
+        {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        input[type="email"]::placeholder
+        {
+            font-size: 15px;
+            text-align: center;
+        }
+    
+        .submit a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .submit a:hover
+        {
+            text-decoration: underline;
+        }
+
+        .log
+        {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            margin-left: 200px;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        .log h3
+        {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .log a
+        {
+            text-decoration: none;
+            color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="SVP_Logistics" srcset="">
+        <div class="heading">
+            Register
+        </div>
+    </div>
+    <div class="Name">
+        <div class="fname"><label> First Name : </label><br>
+            <input type="text" placeholder="Enter your First Name">
+        </div>
+        <div class="lname"> <label>Last Name: </label><br>
+            <input type="text" placeholder="Enter your Last Name">
+        </div>
+    </div>
+    <div class="details1">
+        <div class="email"><label>Email : </label><br>
+            <input type="email" placeholder="Enter your Email Address">
+        </div>
+        <div class="address"><label>Address : </label><br>
+            <input type="text" placeholder="Enter your address">
+        </div>
+    </div>
+    <div class="phone"><label>Phone Number : </label><br>
+        <input type="tel" placeholder="Enter your phone number">
+    </div><br><br>
+    <div class="submit">
+        <button type="submit"><a href="login.html">Submit</a></button>
+    </div>
+
+    <div class="log">
+        Already have an account? &nbsp;<a href="login.html"><h3>LOGIN</h3></a>
+    </div>
+</body>
+</html>
